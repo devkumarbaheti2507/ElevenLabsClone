@@ -8,7 +8,10 @@ const Audio = require("./models/Audio");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors());
+app.use(cors({
+    origin: "https://eleven-labs-clone-nine.vercel.app",
+    methods: ["GET", "POST", "PUT", "DELETE"],
+}));
 app.use(express.json());
 
 mongoose
