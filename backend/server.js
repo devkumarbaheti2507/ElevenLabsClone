@@ -31,3 +31,7 @@ app.get("/api/audio", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
 });
+
+app.get("/", (req, res) => {
+    res.send("Welcome to the backend API server");
+});
