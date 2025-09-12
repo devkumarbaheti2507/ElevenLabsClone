@@ -12,7 +12,7 @@ function Input() {
     const audioRef = useRef(null);
 
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_BACKEND_URL}/api/audio`)
+        fetch(`${import.meta.env.VITE_BACKEND_URL}api/audio`)
         .then((res) => res.json())
         .then((data) => {
                 const urls = data.audio.reduce((acc, item) => {
