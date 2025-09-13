@@ -12,7 +12,7 @@ function Input() {
     const audioRef = useRef(null);
 
     useEffect(() => {
-        fetch("https://your-backend-vercel-domain.vercel.app/api/audio")
+        fetch("https://eleven-labs-clone-backend.vercel.app/api/audio")
         .then((res) => res.json())
         .then((data) => {
                 const urls = data.audio.reduce((acc, item) => {
